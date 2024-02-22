@@ -78,45 +78,45 @@ function createExplorerTemplate(cfg) {
 }
 
 function createToolbarTemplate(cfg = {}) {
-    const toolbarTemplate = `<div class="xeokit-toolbar">
-    <!-- Reset button -->
-    <div class="xeokit-btn-group">
-        <button type="button" class="xeokit-i18n xeokit-reset xeokit-btn fa fa-home fa-2x disabled" data-xeokit-i18ntip="toolbar.resetViewTip" data-tippy-content="Reset view"></button>
-    </div>
-    <div class="xeokit-btn-group" role="group">
-        <!-- 3D Mode button -->
-        <button type="button" class="xeokit-i18n xeokit-threeD xeokit-btn fa fa-cube fa-2x disabled" data-xeokit-i18ntip="toolbar.toggle2d3dTip" data-tippy-content="Toggle 2D/3D"></button>
-        <!-- Perspective/Ortho Mode button -->
-        <button type="button" class="xeokit-i18n xeokit-ortho xeokit-btn fa fa-th fa-2x  disabled" data-xeokit-i18ntip="toolbar.togglePerspectiveTip" data-tippy-content="Toggle Perspective/Ortho"></button>
-        <!-- Fit button -->
-        <button type="button" class="xeokit-i18n xeokit-fit xeokit-btn fa fa-crop fa-2x disabled" data-xeokit-i18ntip="toolbar.viewFitTip" data-tippy-content="View fit"></button>
-        <!-- First Person mode button -->
-        <button type="button" class="xeokit-i18n xeokit-firstPerson xeokit-btn fa fa-male fa-2x disabled" data-xeokit-i18ntip="toolbar.firstPersonTip" data-tippy-content="Toggle first-person mode"></button>
-          <!-- Show/hide IFCSpaces -->
-        <button type="button" class="xeokit-i18n xeokit-showSpaces xeokit-btn fab fa-codepen fa-2x disabled" data-xeokit-i18ntip="toolbar.showSpacesTip" data-tippy-content="Show IFCSpaces"></button>   
-    </div>
-    <!-- Tools button group -->
-    <div class="xeokit-btn-group" role="group">
-        <!-- Hide tool button -->
-        <button type="button" class="xeokit-i18n xeokit-hide xeokit-btn fa fa-eraser fa-2x disabled" data-xeokit-i18ntip="toolbar.hideObjectsTip" data-tippy-content="Hide objects"></button>
-        <!-- Select tool button -->
-        <button type="button" class="xeokit-i18n xeokit-select xeokit-btn fa fa-mouse-pointer fa-2x disabled" data-xeokit-i18ntip="toolbar.selectObjectsTip" data-tippy-content="Select objects"></button>    
-          <!-- Marquee select tool button -->
-        <button type="button" class="xeokit-i18n xeokit-marquee xeokit-btn fas fa-object-group fa-2x disabled" data-xeokit-i18ntip="toolbar.marqueeSelectTip" data-tippy-content="Marquee select objects"></button>`
-        + (cfg.enableMeasurements ? `<!-- Measure distance tool button -->
-        <button type="button" class="xeokit-i18n xeokit-measure-distance xeokit-btn fa fa-ruler fa-2x disabled" data-xeokit-i18ntip="toolbar.measureDistanceTip" data-tippy-content="Measure distance"></button>  
-          <!-- Measure angle tool button -->
-        <button type="button" class="xeokit-i18n xeokit-measure-angle xeokit-btn fa fa-chevron-left fa-2x disabled" data-xeokit-i18ntip="toolbar.measureAngleTip" data-tippy-content="Measure angle"></button>`
+    const toolbarTemplate = `&lt;div class=&quot;xeokit-toolbar&quot;&gt;
+    &lt;!-- Reset button --&gt;
+    &lt;div class=&quot;xeokit-btn-group&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;xeokit-i18n xeokit-reset xeokit-btn fa fa-home fa-2x disabled&quot; data-xeokit-i18ntip=&quot;toolbar.resetViewTip&quot; data-tippy-content=&quot;Reset view&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;xeokit-btn-group&quot; role=&quot;group&quot;&gt;
+        &lt;!-- 3D Mode button --&gt;
+        &lt;button type=&quot;button&quot; class=&quot;xeokit-i18n xeokit-threeD xeokit-btn fa fa-cube fa-2x disabled&quot; data-xeokit-i18ntip=&quot;toolbar.toggle2d3dTip&quot; data-tippy-content=&quot;Toggle 2D/3D&quot;&gt;&lt;/button&gt;
+        &lt;!-- Perspective/Ortho Mode button --&gt;
+        &lt;button type=&quot;button&quot; class=&quot;xeokit-i18n xeokit-ortho xeokit-btn fa fa-th fa-2x  disabled&quot; data-xeokit-i18ntip=&quot;toolbar.togglePerspectiveTip&quot; data-tippy-content=&quot;Toggle Perspective/Ortho&quot;&gt;&lt;/button&gt;
+        &lt;!-- Fit button --&gt;
+        &lt;button type=&quot;button&quot; class=&quot;xeokit-i18n xeokit-fit xeokit-btn fa fa-crop fa-2x disabled&quot; data-xeokit-i18ntip=&quot;toolbar.viewFitTip&quot; data-tippy-content=&quot;View fit&quot;&gt;&lt;/button&gt;
+        &lt;!-- First Person mode button --&gt;
+        &lt;button type=&quot;button&quot; class=&quot;xeokit-i18n xeokit-firstPerson xeokit-btn fa fa-male fa-2x disabled&quot; data-xeokit-i18ntip=&quot;toolbar.firstPersonTip&quot; data-tippy-content=&quot;Toggle first-person mode&quot;&gt;&lt;/button&gt;
+          &lt;!-- Show/hide IFCSpaces --&gt;
+        &lt;button type=&quot;button&quot; class=&quot;xeokit-i18n xeokit-showSpaces xeokit-btn fab fa-codepen fa-2x disabled&quot; data-xeokit-i18ntip=&quot;toolbar.showSpacesTip&quot; data-tippy-content=&quot;Show IFCSpaces&quot;&gt;&lt;/button&gt;   
+    &lt;/div&gt;
+    &lt;!-- Tools button group --&gt;
+    &lt;div class=&quot;xeokit-btn-group&quot; role=&quot;group&quot;&gt;
+        &lt;!-- Hide tool button --&gt;
+        &lt;button type=&quot;button&quot; class=&quot;xeokit-i18n xeokit-hide xeokit-btn fa fa-eraser fa-2x disabled&quot; data-xeokit-i18ntip=&quot;toolbar.hideObjectsTip&quot; data-tippy-content=&quot;Hide objects&quot;&gt;&lt;/button&gt;
+        &lt;!-- Select tool button --&gt;
+        &lt;button type=&quot;button&quot; class=&quot;xeokit-i18n xeokit-select xeokit-btn fa fa-mouse-pointer fa-2x disabled&quot; data-xeokit-i18ntip=&quot;toolbar.selectObjectsTip&quot; data-tippy-content=&quot;Select objects&quot;&gt;&lt;/button&gt;    
+          &lt;!-- Marquee select tool button --&gt;
+        &lt;button type=&quot;button&quot; class=&quot;xeokit-i18n xeokit-marquee xeokit-btn fas fa-object-group fa-2x disabled&quot; data-xeokit-i18ntip=&quot;toolbar.marqueeSelectTip&quot; data-tippy-content=&quot;Marquee select objects&quot;&gt;&lt;/button&gt;`
+        + (cfg.enableMeasurements ? `&lt;!-- Measure distance tool button --&gt;
+        &lt;button type=&quot;button&quot; class=&quot;xeokit-i18n xeokit-measure-distance xeokit-btn fa fa-ruler fa-2x disabled&quot; data-xeokit-i18ntip=&quot;toolbar.measureDistanceTip&quot; data-tippy-content=&quot;Measure distance&quot;&gt;&lt;/button&gt;  
+          &lt;!-- Measure angle tool button --&gt;
+        &lt;button type=&quot;button&quot; class=&quot;xeokit-i18n xeokit-measure-angle xeokit-btn fa fa-chevron-left fa-2x disabled&quot; data-xeokit-i18ntip=&quot;toolbar.measureAngleTip&quot; data-tippy-content=&quot;Measure angle&quot;&gt;&lt;/button&gt;`
             : ` `)
-        + `<!-- section tool button -->
-        <button type="button" class="xeokit-i18n xeokit-section xeokit-btn fa fa-cut fa-2x disabled" data-xeokit-i18ntip="toolbar.sliceObjectsTip" data-tippy-content="Slice objects">
-            <div class="xeokit-i18n xeokit-section-menu-button disabled" data-xeokit-i18ntip="toolbar.slicesMenuTip"  data-tippy-content="Slices menu">
-                <span class="xeokit-arrow-down xeokit-section-menu-button-arrow"></span>
-            </div>
-            <div class="xeokit-i18n xeokit-section-counter" data-xeokit-i18ntip="toolbar.numSlicesTip" data-tippy-content="Number of existing slices"></div>
-        </button>
-    </div>
-</div>`;
+        + `&lt;!-- section tool button --&gt;
+        &lt;button type=&quot;button&quot; class=&quot;xeokit-i18n xeokit-section xeokit-btn fa fa-cut fa-2x disabled&quot; data-xeokit-i18ntip=&quot;toolbar.sliceObjectsTip&quot; data-tippy-content=&quot;Slice objects&quot;&gt;
+            &lt;div class=&quot;xeokit-i18n xeokit-section-menu-button disabled&quot; data-xeokit-i18ntip=&quot;toolbar.slicesMenuTip&quot;  data-tippy-content=&quot;Slices menu&quot;&gt;
+                &lt;span class=&quot;xeokit-arrow-down xeokit-section-menu-button-arrow&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;xeokit-i18n xeokit-section-counter&quot; data-xeokit-i18ntip=&quot;toolbar.numSlicesTip&quot; data-tippy-content=&quot;Number of existing slices&quot;&gt;&lt;/div&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;`;
     return toolbarTemplate;
 }
 
